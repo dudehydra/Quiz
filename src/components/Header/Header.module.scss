@@ -1,0 +1,52 @@
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 38px;
+}
+.current {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  order: 1;
+  margin-bottom: 35px;
+}
+.currentText {
+  font-size: 20px;
+  font-weight: 700;
+}
+.currentTitle {
+  margin-right: 18px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1366px) {
+  .header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .title {
+    font-size: 36px;
+    max-width: 850px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0px;
+  }
+  .current {
+    font-size: 22px;
+    order: 0;
+    display: inline-flex;
+    margin-bottom: 0;
+  }
+  .currentTitle {
+    margin-right: 25px;
+  }
+  .currentText {
+    font-size: 46px;
+  }
+}

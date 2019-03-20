@@ -1,0 +1,123 @@
+.container {
+    display: block;
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 24px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input[type="text"] {
+        color: #ccc;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        display: block;
+        width: 100%;
+        margin-top: 24px;
+        padding-bottom: 8px;
+        pointer-events: none;
+    }
+}
+
+/* Hide the browser's default radio button */
+.container input:not([type="text"]) {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+}
+.checkmarkCheckbox {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after,.checkmarkCheckbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after, .container input:checked ~.checkmarkCheckbox:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-image: linear-gradient(218deg, #039132 0%, #07b82b 100%);
+}
+.container .checkmarkCheckbox:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 13px;
+    height: 16px;
+    background: url("../../assets/images/check.svg") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.container .text {
+    font-size: 14px;
+    font-weight: 400;
+}
+.container input:checked ~ input[type="text"] {
+    border-color: #039132;
+    color: #000000;
+    pointer-events: all;
+}
+
+@media (min-width: 1366px) {
+    .container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 26px;
+        padding-left: 54px;
+        .text {
+            font-size: 24px;
+            margin-right: 16px;
+        }
+        input[type="text"] {
+            margin-top: 13px;
+        }
+    }
+    .checkmark, .checkmarkCheckbox {
+        height: 30px;
+        width: 30px;
+    }
+}

@@ -2,8 +2,11 @@
   "name": "quiz",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
+    "node-sass": "^4.11.0",
     "react": "^16.8.4",
+    "react-countup": "^4.1.1",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8"
   },

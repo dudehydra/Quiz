@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Rubik';
+    src: local('MyFont'), url(./fonts/Rubik-Bold.ttf) format('ttd');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: local('MyFont'), url(./fonts/Rubik-Regular.ttf) format('ttd');
+}
+body {
+    font-family: 'Rubik';
+}
+.container {
+    padding: 42px 16px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1920px) {
+    .container {
+        padding: 42px 376px;
+        padding-top: 162px;
+        padding-bottom: 100px;
+    }
+    body {
+        background-color: #fbfbfb;
+    }
+}

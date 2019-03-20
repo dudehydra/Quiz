@@ -1,0 +1,43 @@
+.title {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 38px;
+}
+.help {
+    color: #909090;
+    font-family: Rubik;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    span {
+        color: #039132;
+    }
+    div {
+        margin-bottom: 8px;
+    }
+}
+@media (min-width: 1366px) {
+    .title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+    .help {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 1920px) {
+    .quizWrapper {
+        box-shadow: 0 2px 20px rgba(226, 226, 226, 0.28);
+        border-radius: 10px;
+        border: 1px solid #e2e2e2;
+        background-color: #ffffff;
+        padding: 40px;
+        width: 808px;
+    }
+    .title {
+        font-size: 30px;
+    }
+}

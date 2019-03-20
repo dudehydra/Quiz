@@ -1,0 +1,97 @@
+.btn {
+    box-shadow: 0 2px 20px rgba(226, 226, 226, 0.28);
+    border-radius: 10px;
+    border: 1px solid #039132;
+    background-color: #ffffff;
+    color: #039132;
+    font-size: 12px;
+    font-weight: 700;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    flex-basis: 194px;
+}
+.btn:hover span:after {
+    transform: translateX(10px);
+}
+.btn:hover  {
+    transform: translateY(5px);
+}
+.btn span {
+    display: flex;
+    align-items: center;
+}
+.btn span:after {
+    transition: transform 0.3s ease-in-out;
+    margin-left: 10px;
+    content: '';
+    display: block;
+    width: 17px;
+    height: 8px;
+    background: url("../../assets/images/arrow.svg") center no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+.btn:disabled {
+    border: 1px solid #909090;
+    span {
+        color: #909090;
+        &:after {
+            background: url("../../assets/images/arrow-right-grey.svg") center no-repeat;
+            background-size: contain;
+        }
+    }
+}
+.btn--prev {
+    flex-basis: 86px;
+    span {
+        font-size: 0;
+        &:after {
+            display: none;
+        }
+        &:before {
+            transition: transform 0.3s ease-in-out;
+            margin-right: 10px;
+            content: '';
+            display: block;
+            width: 17px;
+            height: 8px;
+            background-size: contain;
+            background: url("../../assets/images/arrow-left.svg") center no-repeat;
+            background-size: contain;
+        }
+    }
+}
+.btnContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+@media (min-width: 1920px) {
+    .btnContainer {
+        position: absolute;
+        bottom: -112px;
+        margin-top: 0;
+        width: calc(100% + 80px);
+        margin-left: -40px;
+        margin-right: -40px;
+    }
+    .form {
+        position: relative;
+        height: 100%;
+    }
+    .btn {
+        font-size: 16px;
+        flex-basis: 328px;
+    }
+    .btn--prev {
+        span {
+            font-size: 16px;
+        }
+    }
+}

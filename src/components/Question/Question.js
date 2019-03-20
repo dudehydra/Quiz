@@ -1,18 +1,12 @@
 import React from 'react';
 
-import Aux from '../../hoc/Auxiliary/Auxiliary'
-import Help from '../Help/help';
-import OptionsList from '../QuestionList/OptionsList'
+import OptionsList from '../OptionsList/OptionsList'
 
 const Question = (props) => {
     return (
-        <Aux>
-            <h1>{props.title}</h1>
-            <Help helpText={props.helpText}/>
-            <OptionsList optionsList={props.optionsList} checkboxChange={props.checkboxChange}/>
-            <button onClick={props.prevQuestion}>Предыдущий шаг</button>
-            <button onClick={props.nextQuestion}>Следующий шаг</button>
-        </Aux>
+        <div className={'QuestionCheckbox'}>
+            <OptionsList optionsList={props.optionsList} questionIndex={props.questionIndex} handleRadioChange={props.handleRadioChange}/>
+        </div>
     )
 };
 
