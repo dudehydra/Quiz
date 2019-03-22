@@ -5,7 +5,7 @@ import classes from './QuestionRadio.module.scss'
 
 const QuestionRadio = (props) => {
     return (
-        <div className={classes.radioBlock}>
+        <div className={'radioBlock'}>
             <div className={classes.title}>{props.questionDescr}</div>
             <div className={classes[props.designType]}>
                 <OptionsList optionsList={props.optionsList} questionIndex={props.questionIndex} handleRadioChange={props.handleRadioChange} index={props.index} selected={props.selected}/>

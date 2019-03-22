@@ -48,10 +48,10 @@ const QuestionsList = (props) => {
     ))
     return (
         <form className={classes.form}>
-            <div className={classes.questions}>{Questions}</div>
+            <div className={'questions-wrapper'}>{Questions}</div>
             <div className={classes.btnContainer}>
                 {props.questionNumber !== 0 ? <button className={[classes.btn, classes["btn--prev"]].join(' ')} onClick={props.prevQuestion}  > <span>Предыдущий шаг</span></button> : null}
-                {props.totalQuestions === props.questionNumber ? <button className={classes.btn} onClick={props.nextQuestion} disabled={isDisabled()}><span>Завершить опрос</span></button> : <button className={classes.btn} onClick={props.nextQuestion} disabled={isDisabled()}><span>Следующий шаг</span></button>}
+                {props.totalQuestions === props.questionNumber ? <button className={classes.btn} onClick={()=> props.changePage('end')} disabled={isDisabled()}><span>Завершить опрос</span></button> : <button className={classes.btn} onClick={props.nextQuestion} disabled={isDisabled()}><span>Следующий шаг</span></button>}
             </div>
         </form>
     )

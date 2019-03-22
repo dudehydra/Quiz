@@ -25,6 +25,7 @@
 .btn span {
     display: flex;
     align-items: center;
+    transition: color 0.3s ease-in-out;
 }
 .btn span:after {
     transition: transform 0.3s ease-in-out;
@@ -47,6 +48,7 @@
         }
     }
 }
+
 .btn--prev {
     flex-basis: 86px;
     span {
@@ -72,10 +74,16 @@
     justify-content: space-between;
     margin-top: 50px;
 }
+@media (min-width: 1366px) {
+    .btn {
+        font-size: 16px;
+        height: 72px;
+    }
+}
 @media (min-width: 1920px) {
     .btnContainer {
         position: absolute;
-        bottom: -112px;
+        bottom: -140px;
         margin-top: 0;
         width: calc(100% + 80px);
         margin-left: -40px;
@@ -86,7 +94,6 @@
         height: 100%;
     }
     .btn {
-        font-size: 16px;
         flex-basis: 328px;
     }
     .btn--prev {

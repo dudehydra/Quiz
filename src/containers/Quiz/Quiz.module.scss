@@ -27,6 +27,11 @@
         font-size: 20px;
         margin-bottom: 40px;
     }
+    .quizMain {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 @media (min-width: 1920px) {
     .quizWrapper {

@@ -22,12 +22,12 @@ const Progress = (props) => {
             <div className={classes.progress}>
                 <div className={classes.progressActive} style={{width: percent() + '%'}}>
                     <span className={classes.progressDesc}>
-                        <CountUp start={percentOld()} end={percent()} />
+                        <CountUp start={percentOld()} end={percent()} /> %
                     </span>
                 </div>
             </div>
         </div>
     )
-}
+};
 
 export default Progress;

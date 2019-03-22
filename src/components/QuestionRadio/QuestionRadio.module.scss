@@ -21,9 +21,27 @@
 .radioBlock {
   margin-bottom: 40px;
 }
+@media (min-width: 767px) {
+  .inline {
+    margin-bottom: 0;
+    justify-content: flex-start;
+    label {
+      margin-bottom: 0;
+      margin-right: 40px;
+    }
+  }
+}
 @media (min-width: 1366px) {
   .title {
     font-size: 24px;
     margin-bottom: 24px;
+  }
+  .inline {
+    margin-bottom: 0;
+    justify-content: flex-start;
+    label {
+      margin-bottom: 0;
+      margin-right: 80px;
+    }
   }
 }

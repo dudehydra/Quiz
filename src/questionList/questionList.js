@@ -1,6 +1,9 @@
 var quizQuestions = [
      {   questionsTitle: 'Какого Вы пола?',
          help: [],
+         helperText: 'В разных сферах жизни граждан встречаются проблемы. Поэтому я здесь чтобы помочь Вам с ними разобраться',
+         helperImg: require('../assets/images/maskot.svg'),
+         classes: 'quizWrapper ',
          questions: [
              {   questionDescr: '',
                  id: 1,
@@ -16,6 +19,9 @@ var quizQuestions = [
      },
     {   questionsTitle: 'Какие основные проблемы в сфере жкх?',
         help: ['- Выберите <span>3</span>  варианта'],
+        helperText: 'В разных сферах жизни граждан встречаются проблемы. Поэтому я здесь чтобы помочь Вам с ними разобраться2',
+        helperImg: require('../assets/images/maskot2.svg'),
+        classes: 'quizWrapper',
         questions: [
             {   questionDescr: '',
                 id: 1,
@@ -33,6 +39,9 @@ var quizQuestions = [
     },
     {   questionsTitle: 'Насколько вы согласны с каждым высказыванием по 5-ти балльной шкале.',
         help: ['<span>5</span> баллов - абсолютно согласен.', '<span>1</span> балл - абсолютно не согласен'],
+        helperText: 'В разных сферах жизни граждан встречаются проблемы. Поэтому я здесь чтобы помочь Вам с ними разобратьс3',
+        helperImg: require('../assets/images/maskot2.svg'),
+        classes: 'quizWrapper quizWrapper--separated',
         questions: [
             {   questionDescr: 'Выборы - это хороший способ простым людям повлиять на жизнь района, города, республики.',
                 id: 1,
